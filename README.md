@@ -51,14 +51,14 @@
 - has_many: orders
 - belongs_to: category
 
-# Ordersテーブル
+## Ordersテーブル
 
 |Column|Type|Options|
 |-------|-----|-------|
 |product_id|integer|foreign_key: true|
 
 
-## Ordersアソシエーション
+### Ordersアソシエーション
 - belongs_to: product
 
 ### imagesテーブル
