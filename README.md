@@ -65,11 +65,8 @@ false|
 ### imagesテーブル
 
 |Column|Type|Options|
-
 |-------|-----|-------|
-
 |product_id|integer|foreign_key: true|
-
 |image|text||
 
 ### imagesアソシエーション
