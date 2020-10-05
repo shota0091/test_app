@@ -1,20 +1,20 @@
- README
+ # README
 
-# Userテーブル
-｜Column｜Type｜Options｜
+## Userテーブル
+|Column｜Type｜Options|
 |-------|-----|-------|
 |nickname|string|null: false|
 |mail|string|null: false|
 |password|string|null: false|
 
-# Usersアソシエーション
-has_many: products
-has_many: cards
-has_one: address
+### Usersアソシエーション
+- has_many: products
+- has_many: cards
+- has_one: address
 
 
-# addressテーブル（商品配送情報）
-｜Column｜Type｜Options｜
+## addressテーブル（商品配送情報）
+|Column｜Type｜Options|
 |-------|-----|-------|
 |user_id|integer|foreign_key: true|
 |last_name|string|null: false|
@@ -32,11 +32,11 @@ has_one: address
 |tell_number|string||
 
 ### addressアソシエーション
-|belongs_to: user|
+- belongs_to: user
 
 
-# Productsテーブル
-｜Column｜Type｜Options｜
+## Productsテーブル
+|Column｜Type｜Options|
 |-------|-----|-------|
 |user_id|integer|foreign_key: true, null: false|
 |title|string|null: false|
@@ -50,43 +50,43 @@ has_one: address
 
 
 ### Productsアソシエーション
-has_many: images
-belongs_to: user
-has_many: orders
-belongs_to: category
+- has_many: images
+- belongs_to: user
+- has_many: orders
+- belongs_to: category
 
 # Ordersテーブル
-｜Column｜Type｜Options｜
+|Column｜Type｜Options|
 |-------|-----|-------|
 |product_id|integer|foreign_key: true|
 
 
 ## Ordersアソシエーション
-belongs_to: product
+- belongs_to: product
 
 ### imagesテーブル
-｜Column｜Type｜Options｜
+|Column｜Type｜Options|
 |-------|-----|-------|
 |product_id|integer|foreign_key: true|
 |image|text||
 
 # imagesアソシエーション
-belongs_to: product
+- belongs_to: product
 
 ---アクティブハッシュ---
 # categories(カテゴリー)テーブル
-｜Column｜Type｜Options｜
+|Column｜Type｜Options|
 |-------|-----|-------|
 |item|string|null: false|
 ---アクティブハッシュここまで---
 
 # categoriesアソシエーション
-has_many:producrs
+- has_many:producrs
 
 
 
 # Cardsテーブル
-｜Column｜Type｜Options｜
+|Column｜Type｜Options|
 |-------|-----|-------|
 |user_name_romazi|storing|null: false|
 |customer_id|string|null: false|
@@ -94,4 +94,4 @@ has_many:producrs
 
 
 # Cardsアソシエーション
-belongs_to: user
+- belongs_to: user
