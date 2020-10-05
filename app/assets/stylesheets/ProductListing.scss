@@ -1,0 +1,16 @@
+.ProductListing{
+  background-color:#77787b;
+  height: 100%;
+  &__header{
+    height: 15%;
+    background-color:red;
+  }
+  &__ItemBox{
+    margin:0 25%;
+    height: 100%;
+    background-color:white;
+  }
+  &__footer{
+    background-color:#77787b;
+  }
+}
