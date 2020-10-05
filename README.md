@@ -22,8 +22,7 @@
 |last_name_hurigana|string|null: false|
 |first_name_hurigana|string|null: false|
 |birthday|data||
-|postal_number_id|integer|foreign_key: true, null: 
-false|
+|postal_number_id|integer|foreign_key: true, null: false|
 |postal_prefectures_id|integer|foreign_key: true, null: false|
 |postal_municipalities_id|integer|foreign_key: true, null: false|
 |postal_address|string|null: false|
